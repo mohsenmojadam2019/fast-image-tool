@@ -1,0 +1,1 @@
+chrome.runtime.onInstalled.addListener(()=>chrome.contextMenus.create({id:'fast-image-tool',title:'ویرایش تصویر با Fast Image Tool',contexts:['image']}));chrome.contextMenus.onClicked.addListener((info)=>{if(info.menuItemId==='fast-image-tool')chrome.storage.local.set({sourceUrl:info.srcUrl})});

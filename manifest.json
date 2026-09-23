@@ -1,0 +1,1 @@
+{"manifest_version":3,"name":"Fast Image Tool","version":"1.0.0","description":"Compress, crop, resize and convert images locally in Chrome.","action":{"default_popup":"popup.html","default_title":"Fast Image Tool"},"background":{"service_worker":"background.js"},"permissions":["contextMenus","downloads"],"icons":{"128":"icon.svg"}}
