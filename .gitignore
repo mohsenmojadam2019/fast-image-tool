@@ -1,0 +1,4 @@
+node_modules/
+dist/linux-unpacked/
+dist/.icon-ico/
+*.blockmap
