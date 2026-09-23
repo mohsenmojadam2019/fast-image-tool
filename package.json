@@ -2,6 +2,7 @@
   "name": "fast-image-tool",
   "version": "1.1.0",
   "private": true,
+  "author": {"name": "Fast Image Tool", "email": "support@fast-image-tool.local"},
   "description": "Professional offline image compression, crop and conversion tool",
   "main": "desktop/main.cjs",
   "scripts": {
