@@ -1,0 +1,25 @@
+{
+  "name": "fast-image-tool",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Professional offline image compression, crop and conversion tool",
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "check": "node --check popup.js && node --check background.js && node --check desktop/main.cjs",
+    "start": "electron .",
+    "dist:win": "electron-builder --win nsis portable",
+    "dist:linux": "electron-builder --linux AppImage deb"
+  },
+  "devDependencies": {
+    "electron": "^38.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "ir.fastimagetool.desktop",
+    "productName": "Fast Image Tool",
+    "files": ["popup.html", "popup.css", "popup.js", "icon.svg", "desktop/**/*"],
+    "win": {"target": ["nsis", "portable"]},
+    "linux": {"target": ["AppImage", "deb"], "category": "Graphics"},
+    "nsis": {"oneClick": false, "allowToChangeInstallationDirectory": true}
+  }
+}
